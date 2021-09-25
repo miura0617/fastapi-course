@@ -1,0 +1,13 @@
+.venv
+venv 
+
+# backend/__pycache__
+# backend/core/__pycache__
+__pycache__
+
+backend/sql_app.db
+backend/test_db.db 
+
+backend/.pytest_cache
+backend/htmlcov
+backend/.coverage
