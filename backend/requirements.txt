@@ -28,6 +28,7 @@ pycparser==2.20
 pydantic==1.8.1
 pyparsing==2.4.7
 pytest==6.2.3
+# pytestのテストカバレッジ用パッケージ
 pytest-cov==2.11.1
 python-dotenv==0.17.0
 python-jose==3.2.0
