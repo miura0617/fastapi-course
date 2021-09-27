@@ -31,7 +31,9 @@ pytest==6.2.3
 # pytestのテストカバレッジ用パッケージ
 pytest-cov==2.11.1
 python-dotenv==0.17.0
+# for jwt token
 python-jose==3.2.0
+# for request form data
 python-multipart==0.0.5
 requests==2.25.1
 rsa==4.7.2
