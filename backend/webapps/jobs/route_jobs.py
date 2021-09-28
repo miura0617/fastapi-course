@@ -7,6 +7,7 @@ from sqlalchemy.orm.session import Session
 from db.repository.jobs import list_jobs
 from sqlalchemy.orm import Session
 from db.session import get_db
+from db.repository.jobs import retreive_job
 
 
 template = Jinja2Templates(directory="templates")
@@ -20,3 +21,8 @@ def home(request:Request, db:Session=Depends(get_db)):
     jobs = list_jobs(db=db)
     # print(dir(requests))
     return template.TemplateResponse("jobs/homepage.html", {"request":request, "jobs":jobs})
+
+@router.get("/detail/{id}")
+def job_detail_by_id(id:int, request:Request, db:Session=Depends(get_db)):
+    job = retreive_job(id=id, db=db)
+    return template.TemplateResponse("jobs/detail.html", {"request":request, "job":job})
