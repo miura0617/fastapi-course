@@ -35,11 +35,13 @@ async def register(request:Request, db:Session=Depends(get_db)):
         )
         try:
             user = create_new_user(user=user, db=db)
-            return responses.RedirectResponse("/", status_code=status.HTTP_302_FOUND)
+            return responses.RedirectResponse("/?msg=Successfully-Registered", status_code=status.HTTP_302_FOUND)
         except IntegrityError:
             # not unique
             # username or email already exists
             form.__dict__.get("errors").append("Dpuplicate username or email")
+            # form.__dict__をテンプレートファイルにわたす
             return templates.TemplateResponse("users/register.html", form.__dict__)
+    # form.__dict__をテンプレートファイルにわたす
     return templates.TemplateResponse("users/register.html", form.__dict__)
     
