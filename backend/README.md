@@ -1,5 +1,5 @@
 # APIエンドポイント(バックエンドApis)
-## jobs
+## jobs（tags）
 ### jobs/create-job
 　　POSTメソッド：DBに新しいジョブを書き込みます。
 ### jobs/get/{id}
