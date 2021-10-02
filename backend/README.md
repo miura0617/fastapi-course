@@ -47,81 +47,81 @@
 
 
 # フォルダ構成
-backend 
-├ apis 
-│ ├ version1 
-│ │ ├ route_jobs.py 
-│ │ ├ route_login.py 
-│ │ └ route_users.py 
-│ ├ base.py 
-│ └ utils.py 
-├ core 
-│ ├ config.py 
-│ ├ hashing.py 
-│ └ security.py 
-├ db 
-│ ├ models 
-│ │ ├ jobs.py 
-│ │ └ users.py 
-│ ├ repository 
-│ │ ├ jobs.py 
-│ │ ├ login.py 
-│ │ └ users.py 
-│ ├ base.py 
-│ ├ base_class.py 
-│ └ session.py 
-├ htmlcov 
-├ schemas 
-│ ├ jobs.py 
-│ └ users.py 
-├ static 
-│ ├ images 
-│ │ └ logo.png 
-│ └ js 
-│    └ autocomplete.js 
-├ templates 
-│ ├ auth 
-│ │ └ login.html 
-│ ├ components 
-│ │ ├ alerts.html 
-│ │ ├ cards.html 
-│ │ └ navbar.html 
-│ ├ general_pages 
-│ │ └ homepage.html 
-│ ├ jobs 
-│ │ ├ create_job.html 
-│ │ ├ detail.html 
-│ │ ├ homepage.html 
-│ │ └ show_jobs_to_delete.html 
-│ ├ shared 
-│ │ ├ base.html 
-│ └ users 
-│    └ register.html 
-├ tests 
-│ ├ db 
-│ │ └ test_jobs_repo.py 
-│ ├ test_routes 
-│ │ ├ test_jobs.py 
-│ │ └ test_users.py 
-│ ├ utils 
-│ │ └ users.py 
-│ └ conftest.py 
-├ webapps 
-│ ├ auth 
-│ │ ├ forms.py 
-│ │ └ route_login.py 
-│ ├ jobs 
-│ │ ├ forms.py 
-│ │ └ route_jobs.py 
-│ ├ users 
-│ │ ├ forms.py 
-│ │ └ route_users.py 
-│ └ base.py 
-├ .coverage 
-├ .coveragerc 
-├ .env 
-├ main.py 
-├ README.md 
-├ requirements.txt 
-├ sql_app.db 
-└ test_db.db 
+backend  
+├ apis  
+│ ├ version1  
+│ │ ├ route_jobs.py  
+│ │ ├ route_login.py  
+│ │ └ route_users.py  
+│ ├ base.py  
+│ └ utils.py  
+├ core  
+│ ├ config.py  
+│ ├ hashing.py  
+│ └ security.py  
+├ db  
+│ ├ models  
+│ │ ├ jobs.py  
+│ │ └ users.py  
+│ ├ repository  
+│ │ ├ jobs.py  
+│ │ ├ login.py  
+│ │ └ users.py  
+│ ├ base.py  
+│ ├ base_class.py  
+│ └ session.py  
+├ htmlcov  
+├ schemas  
+│ ├ jobs.py  
+│ └ users.py  
+├ static  
+│ ├ images  
+│ │ └ logo.png  
+│ └ js  
+│    └ autocomplete.js  
+├ templates  
+│ ├ auth  
+│ │ └ login.html  
+│ ├ components  
+│ │ ├ alerts.html  
+│ │ ├ cards.html  
+│ │ └ navbar.html  
+│ ├ general_pages  
+│ │ └ homepage.html  
+│ ├ jobs  
+│ │ ├ create_job.html  
+│ │ ├ detail.html  
+│ │ ├ homepage.html  
+│ │ └ show_jobs_to_delete.html  
+│ ├ shared  
+│ │ ├ base.html  
+│ └ users  
+│    └ register.html  
+├ tests  
+│ ├ db  
+│ │ └ test_jobs_repo.py  
+│ ├ test_routes  
+│ │ ├ test_jobs.py  
+│ │ └ test_users.py  
+│ ├ utils  
+│ │ └ users.py  
+│ └ conftest.py  
+├ webapps  
+│ ├ auth  
+│ │ ├ forms.py  
+│ │ └ route_login.py  
+│ ├ jobs  
+│ │ ├ forms.py  
+│ │ └ route_jobs.py  
+│ ├ users  
+│ │ ├ forms.py  
+│ │ └ route_users.py  
+│ └ base.py  
+├ .coverage  
+├ .coveragerc  
+├ .env  
+├ main.py  
+├ README.md  
+├ requirements.txt  
+├ sql_app.db  
+└ test_db.db  
